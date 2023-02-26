@@ -1,4 +1,5 @@
 server:
+  port: 8084
   error:
     include-message=always:
 spring:
@@ -14,6 +15,7 @@ spring:
     properties:
       hibernate:
         format_sql: 'true'
+        dialect: org.hibernate.dialect.PostgreSQL81Dialect
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     show-sql: 'true'

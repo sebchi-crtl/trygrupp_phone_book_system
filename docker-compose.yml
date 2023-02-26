@@ -9,6 +9,8 @@ services:
       - "8084:8080"
     depends_on:
       - postgres
+    links:
+        - postgres:database
   postgres:
     container_name: postgres
     image: postgres
